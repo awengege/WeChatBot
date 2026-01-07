@@ -2330,6 +2330,18 @@ def run_one_key_detection():
     <p style="color: red;">未找到一键检测.bat，请检查路径是否正确。</p>
     <p>请确保<b>一键检测.bat</b>文件位于程序当前运行目录下。</p>
     """
+@app.route('/bzwd')
+@login_required
+def show_bzwd_page():
+    """打开bzwd.html页面"""
+    try:
+        # 如果需要给页面传递参数，可以在这里添加，比如：
+        # config = parse_config()
+        # return render_template('bzwd.html', config=config)
+        return render_template('bzwd.html')
+    except Exception as e:
+        app.logger.error(f"加载bzwd.html页面失败: {e}")
+        return "页面加载失败，请检查日志", 500
 
 def check_should_post_forum(character_name):
     """调用AI判断是否发论坛内容"""
@@ -3741,6 +3753,7 @@ if __name__ == '__main__':
     # 验证配置文件完整性
     validate_config()
 
+
     # 配置文件存在检查
     config_path = os.path.join(os.path.dirname(__file__), 'config.py')
     if not os.path.exists(config_path):
@@ -3781,7 +3794,7 @@ if __name__ == '__main__':
         webbrowser.open(f'http://localhost:{PORT}/')
     
     Timer(1, open_browser).start()  # 延迟1秒确保服务器已启动
-    
+
     # 根据配置决定绑定地址
     #host = "0.0.0.0" if config.get('ENABLE_LOGIN_PASSWORD', False) else "127.0.0.1"
     app.run(host= "127.0.0.1", debug=False, port=PORT)
