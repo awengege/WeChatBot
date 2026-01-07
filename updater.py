@@ -33,7 +33,7 @@ from typing import Tuple
 import sys
 import datetime
 import time
-os.environ["PROJECT_NAME"] = 'iwyxdxl/WeChatBot_WXAUTO_SE'
+os.environ["PROJECT_NAME"] = 'awengegel/WeChatBot'
 logger = logging.getLogger(__name__)
 
 class Updater:
