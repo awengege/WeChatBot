@@ -2,8 +2,9 @@
 - 这是一个智能微信聊天机器人。通过wxautox_wechatbot收发微信消息，调用deepseek、gpt、gemini等大语言模型生成回复消息。
 - 原项目仓库：https://github.com/KouriChat/KouriChat
 - 本项目由iwyxdxl在原项目基础上修改创建。
+- 由于原项目停止更新，现由阿文睡不醒继续更新维护
 - 本机器人致力于实现更加拟人化聊天效果，支持多种功能。
-- 本程序暂不支持微信4.1.2
+- 本程序暂支持微信4.1.2
 
 # 效果展示
 <img src="Demo_Image/1.png" alt="示例图片1" width="300px">
