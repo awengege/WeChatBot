@@ -34,7 +34,7 @@
 
 # 使用前准备
 1. 请先安装python、pip，python版本应大于3.8
-2. 申请大模型API,推荐WeAPIs https://vg.v1api.cc/register?aff=Rf3h
+2. 申请大模型API,推荐WeAPIs https://vg.v1api.cc/register?aff=WnGO
 
 # 快速上手
 1. 登录电脑微信，确保在后台运行
